@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>Tuts</title>
+
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+
+	<div ng-controller="MainController">
+
+		<tuts-timer time="timer1" on-start="onStart(time)"></tuts-timer><br>
+
+		<tuts-timer time="timer2" label="Marathon: "></tuts-timer><br>
+		
+		<tuts-timer time="timer3"></tuts-timer>
+	
+	</div>
+
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+
+	<script src="js/app.js"></script>
+</body>
+</html>
